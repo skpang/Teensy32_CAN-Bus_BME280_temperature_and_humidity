@@ -61,6 +61,7 @@ void loop() {
   msg.buf[4] = 0;
   msg.buf[5] = 0;
   msg.buf[6] = 0;
+  msg.buf[7] = 0;
   Can0.write(msg);                      //Transmit the CAN data out
     
   temp = bme.getHumidity_RH();
@@ -77,6 +78,7 @@ void loop() {
   msg.buf[4] = 0;
   msg.buf[5] = 0;
   msg.buf[6] = 0;
+  msg.buf[7] = 0;
  
   Can0.write(msg);                       //Transmit the CAN data out
   Serial.println(" ");
